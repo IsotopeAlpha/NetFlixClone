@@ -7,7 +7,7 @@
          FlutterApplication and put your custom class here. -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:name="io.flutter.app.FlutterApplication"
+        android:name="${applicationName}"
         android:label="flutter_netflix_responsive_ui"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -41,8 +41,9 @@
         </activity>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
-        <meta-data
+        
+    </application>
+    <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-    </application>
 </manifest>

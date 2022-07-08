@@ -12,9 +12,9 @@ class NavScreen extends StatefulWidget {
 class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
     HomeScreen(key: PageStorageKey('homeScreen')),
-    Scaffold(),
-    Scaffold(),
-    Scaffold(),
+    SearchScreen(),
+    ComingSoon(key: PageStorageKey('comingSoonScreen')),
+    Downloads(),
     Scaffold(),
   ];
 
@@ -44,7 +44,7 @@ class _NavScreenState extends State<NavScreen> {
                       title,
                       BottomNavigationBarItem(
                         icon: Icon(icon, size: 30.0),
-                        title: Text(title),
+                        label: title,
                       )))
                   .values
                   .toList(),

@@ -7,7 +7,7 @@ class CustomAppBar extends StatelessWidget {
   final double scrollOffset;
 
   const CustomAppBar({
-    Key key,
+    Key? key,
     this.scrollOffset = 0.0,
   }) : super(key: key);
 
@@ -144,15 +144,15 @@ class _AppBarButton extends StatelessWidget {
   final Function onTap;
 
   const _AppBarButton({
-    Key key,
-    @required this.title,
-    @required this.onTap,
+    Key? key,
+    required this.title,
+    required this.onTap,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: onTap(),
       child: Text(
         title,
         style: const TextStyle(
