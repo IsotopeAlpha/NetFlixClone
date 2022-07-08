@@ -15,7 +15,7 @@ class _NavScreenState extends State<NavScreen> {
     SearchScreen(),
     ComingSoon(key: PageStorageKey('comingSoonScreen')),
     Downloads(),
-    Scaffold(),
+    MoreScreen(),
   ];
 
   final Map<String, IconData> _icons = const {
